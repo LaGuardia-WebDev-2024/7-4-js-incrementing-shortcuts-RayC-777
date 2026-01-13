@@ -32,7 +32,9 @@ draw = function(){
   ellipse(rightX, 100, 126, 97);
   ellipse(rightX+62, 100, 70, 60);
   ellipse(rightX-62, 100, 70, 60);
-  
+
+  sunRadius += 2
+
   leftX = leftX - 1;
   rightX = rightX + 1;
 
@@ -41,6 +43,10 @@ leftX = 530;}
 if(rightX > 500){
 rightX = -100;
 }
+if(sunRadius > 1050){
+sunRadius = 100
+};
+
 
   
 }
